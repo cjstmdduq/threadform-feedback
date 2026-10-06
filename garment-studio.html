@@ -14,18 +14,18 @@ main{max-width:1680px;padding-left:3vw;padding-right:3vw}.workspace{grid-templat
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="THREADFORM. — Design Studio Demo">
 <meta name="twitter:description" content="핏·기장·컬러를 바꾸며 도식화와 3D를 나란히 확인하는 의류 디자인 데모.">
-<meta name="twitter:image" content="https://cjstmdduq.github.io/threadform-feedback/images/og-threadform.png">
+<meta name="twitter:image" content="https://cjstmdduq.github.io/threadform-feedback/images/og-threadform-v2.png">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="ko_KR">
 <meta property="og:site_name" content="THREADFORM Feedback">
 <meta property="og:title" content="THREADFORM. — Design Studio Demo">
 <meta property="og:description" content="핏·기장·컬러를 바꾸며 도식화와 3D를 나란히 확인하는 의류 디자인 데모.">
 <meta property="og:url" content="https://cjstmdduq.github.io/threadform-feedback/garment-studio.html">
-<meta property="og:image" content="https://cjstmdduq.github.io/threadform-feedback/images/og-threadform.png">
+<meta property="og:image" content="https://cjstmdduq.github.io/threadform-feedback/images/og-threadform-v2.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:image:type" content="image/png">
-<meta property="og:image:alt" content="THREADFORM 의류 디자인 툴과 홈페이지 피드백 시안">
+<meta property="og:image:alt" content="THREADFORM | BUILDA STUDIO FEEDBACK — From idea. To your label.">
 <link rel="canonical" href="https://cjstmdduq.github.io/threadform-feedback/garment-studio.html">
 </head><body><header><a class="brand" href="index.html">THREADFORM<span>.</span></a><div class="eyebrow">GARMENT STUDIO</div><span class="badge">Prototype / 01</span></header><main><div class="intro"><div><div class="eyebrow">MAKE IT YOURS</div><h1>생각한 옷에, 형태를 입히세요.</h1><p>디테일을 선택하고, 입체로 확인해 보세요.</p></div><span class="badge">3D 샘플 스튜디오</span></div><div class="workspace"><aside class="options"><h2>나만의 스웨트셔츠</h2><div class="sub">01 · 실루엣과 디테일</div><fieldset><legend>핏</legend><div class="row" data-field="fit"><button class="choice" data-value="slim">슬림</button><button class="choice" data-value="regular">레귤러</button><button class="choice" data-value="oversized">오버핏</button></div></fieldset><fieldset><legend>기장</legend><div class="row" data-field="length"><button class="choice" data-value="crop">크롭</button><button class="choice" data-value="normal">기본</button><button class="choice" data-value="long">롱</button></div></fieldset><div class="colorline"><span class="label">컬러</span><span id="colorname" class="colorname"></span></div><div class="swatches" id="swatches"></div><div class="divider"></div><label class="toggleline">후드<input id="hood" type="checkbox" checked></label><label class="toggleline">캥거루 포켓<input id="pocket" type="checkbox" checked></label><div class="divider"></div><button class="reset" id="reset">기본 디자인으로 되돌리기</button></aside><section class="flat-panel" aria-label="패션 도식화"><div class="flat-title"><strong>패션 도식화</strong><span id="flat-side">FRONT</span></div><div class="flat-stage"><svg id="technical" viewBox="-42 0 444 405" role="img" aria-label="현재 의류의 앞면 패션 도식화"></svg></div><div class="flat-views"><button data-flatview="front" class="active">앞면</button><button data-flatview="back">뒷면</button></div><dl class="measurements" id="measurements" aria-live="polite"></dl><div class="flat-note">단위 cm · 가슴과 밑단은 단면 기준<br>선택 옵션에 따른 예시 치수이며 실제 제작 치수가 아닙니다.</div></section><section class="preview" aria-label="3D 의류 미리보기"><div class="previewtop"><strong>3D PREVIEW</strong><span>360° VIEW</span></div><div class="viewport" id="viewport"><div class="watermark">YOUR FORM</div><div class="hint">드래그하여 회전 · 스크롤하여 확대</div><div class="viewbar"><button data-view="front">앞면</button><button data-view="back">뒷면</button><button data-view="angle" class="active">입체</button><button id="rotate" aria-pressed="false">자동 회전</button></div></div><div class="summary" aria-live="polite"><div><small>CURRENT DESIGN</small><strong id="itemname">후디</strong></div><div class="specs" id="summary"></div></div></section></div><div class="foot"><span>형태 확인용 3D 데모입니다. 실제 패턴·치수·원단의 드레이프와는 차이가 있습니다.</span><span>THREADFORM. · DESIGN STUDIO</span></div></main><script>(() => {
   // work/garment/dist/vendor/three.module.js
