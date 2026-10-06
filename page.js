@@ -137,3 +137,18 @@
   if (!hero || !('IntersectionObserver' in window)) { document.body.classList.add('past-hero'); return; }
   new IntersectionObserver(([entry]) => document.body.classList.toggle('past-hero', !entry.isIntersecting), { threshold: 0.15 }).observe(hero);
 })();
+
+// Keep the mobile call to action clear of the contact form and footer.
+(() => {
+  const regions = [...document.querySelectorAll('#contact, footer.footer--cta-sitemap')];
+  if (!('IntersectionObserver' in window)) return;
+  const visible = new Set();
+  const observer = new IntersectionObserver(entries => {
+    for (const entry of entries) {
+      if (entry.isIntersecting) visible.add(entry.target);
+      else visible.delete(entry.target);
+    }
+    document.body.classList.toggle('at-contact', visible.size > 0);
+  });
+  regions.forEach(region => observer.observe(region));
+})();

@@ -2071,7 +2071,30 @@ header.nav.nav--topbar.nav--more{padding-inline:max(var(--content-inset),calc((1
 <meta property="og:image:type" content="image/png">
 <meta property="og:image:alt" content="THREADFORM | BUILDA STUDIO FEEDBACK — From idea. To your label.">
 <link rel="canonical" href="https://cjstmdduq.github.io/threadform-feedback/">
-<style id="threadform-production-photo">#services .fsc-card:nth-child(4) .fsc-media{padding:0}#services .fsc-card:nth-child(4) .fsc-media img{object-fit:cover;border-radius:0}</style></head>
+<style id="threadform-production-photo">#services .fsc-card:nth-child(4) .fsc-media{padding:0}#services .fsc-card:nth-child(4) .fsc-media img{object-fit:cover;border-radius:0}</style><style id="threadform-mobile-fixes">
+.banner-mobile{display:none}
+body:not(.past-hero) .banner--pill{visibility:hidden}
+body.menu-open .banner--pill{visibility:hidden;pointer-events:none}
+@media(max-width:760px){
+header.nav.nav--topbar.nav--more{padding:12px 20px;gap:12px;min-height:68px}
+header.nav.nav--more .menu-btn{min-width:44px;min-height:44px;padding:10px 8px;flex:none}
+#top .actions{display:grid;grid-template-columns:1fr;gap:10px;width:100%;max-width:340px!important}
+#top .actions .btn{width:100%;justify-content:center;min-height:48px;text-align:center}
+#studio .btn{min-height:48px;justify-content:center;padding-inline:20px}
+body .banner--pill{position:fixed;left:12px;right:12px;bottom:calc(12px + env(safe-area-inset-bottom,0px));width:auto;max-width:560px;margin:0 auto;transform:none;display:grid;grid-template-columns:minmax(0,1fr) auto;gap:10px;padding:10px 10px 10px 16px;border-radius:18px;background:#17191f;color:#fff;box-shadow:0 8px 28px #0003;white-space:normal;z-index:25}
+.banner--pill .banner-desktop{display:none}.banner--pill .banner-mobile{display:inline}
+.banner--pill p{font-size:12px;line-height:1.45;min-width:0;word-break:keep-all}
+body .banner--pill .btn{min-height:44px;min-width:102px;padding:10px 14px;display:inline-flex;justify-content:center;font-size:13px;white-space:nowrap;line-height:1.2;border-radius:12px;background:#fff;color:#17191f}
+body.at-contact .banner--pill{visibility:hidden;pointer-events:none}
+#contact .form input,#contact .form textarea{font-size:16px}
+.footer--cta-sitemap .base>div{min-width:0;max-width:100%}
+.footer--cta-sitemap .docs{flex-wrap:wrap;gap:12px 20px}
+.footer--cta-sitemap .info,.footer--cta-sitemap .fk-biz{overflow-wrap:anywhere}
+.footer--cta-sitemap{padding-bottom:calc(28px + env(safe-area-inset-bottom,0px))}
+}
+@media(max-width:480px){header.nav.nav--more>.btn{display:none}header.nav.nav--more .logo{flex:none;overflow:visible;font-size:22px}header.nav.nav--more .menu-btn{margin-left:auto}}
+</style>
+</head>
 <body data-button="solid" data-pill="yes" data-button-glass="no" data-card="framed" data-elev="layered" data-border="hairline" data-radius="soft" data-button-id="solid-pill" data-bgfx="solid" data-textfx="none" data-hero="type-led" data-intro="inline-pill" data-features="stack-cards" data-works="rows" data-proof="condensed-row" data-cta="form" data-footer="cta-sitemap" data-accents="one" data-heading="title-action" data-kicker="chip" data-titlemod="two-tone" data-nav="topbar" data-align="centered" data-grid="column" data-imagery="fullbleed-photo" data-icon="outline" data-illus="none" data-pixelate="no" data-banner="floating-pill" data-team="portrait-cards" data-history="year-rail" data-pricing="feature-table" data-contact="map-card" data-faq="center-line" data-process="numbered-cards" data-testimonials="split-panels" data-story="sticky-steps" data-news="none" data-hover="zoom" data-scroll="fade-reveal" data-focus="offset-ring" data-cursor="native" data-dark="no" data-materials="screen">
 
 <header class="nav nav--topbar nav--more"><a class="logo" href="#top">THREADFORM.</a><nav><a href="#story">Process</a><a href="#services">Design</a><a href="#services">Toolkit</a><a href="#faq">FAQ</a></nav><a class="btn btn--primary" href="garment-studio.html">Start your brand</a><button class="menu-btn menu-btn--more" type="button" aria-expanded="false" aria-controls="site-menu">Menu</button></header><div class="overlay" id="site-menu" hidden><nav aria-label="메뉴"><a href="#story">Process</a><a href="#services">Design</a><a href="#services">Toolkit</a><a href="#faq">FAQ</a></nav></div>
@@ -2093,7 +2116,7 @@ header.nav.nav--topbar.nav--more{padding-inline:max(var(--content-inset),calc((1
 <div class="tone contact-tone"><section class="block cta cta--form" id="contact"><div class="wrap two"><div class="contact-intro"><header class="sh rv" data-sh="stack"><p class="sh-kicker"><span class="sh-label">START A PROJECT</span></p><h2 class="h2 sh-title"><span class="sh-em">Let’s<br>talk.</span></h2><p class="sh-lead">만들고 싶은 옷을 알려주세요.<br>첫 샘플을 준비하는 대화는 여기서 시작해요.</p></header><p class="body">아이디어가 아직 구체적이지 않아도 괜찮아요. 아이템과 대략적인 수량만 적어주세요.</p><div class="contact-next"><span>아직 디자인을 고민 중이라면</span><a href="garment-studio.html">디자인 스튜디오에서 먼저 만들어보기</a></div></div><form class="form" onsubmit="event.preventDefault();this.querySelector('.contact-status').hidden=false;"><div class="contact-form-head"><h3>제작 상담 문의</h3><p>연락받을 정보와 만들고 싶은 옷을 남겨주세요.</p></div><label for="contact-name">이름 / 브랜드명<input id="contact-name" name="name" autocomplete="name" required placeholder="이름 또는 브랜드명"></label><label for="contact-email">이메일<input id="contact-email" name="email" type="email" autocomplete="email" required placeholder="hello@yourbrand.com"></label><label for="contact-project">만들고 싶은 옷<textarea id="contact-project" name="project" rows="4" required placeholder="예: 오버핏 후디 50장, 네이비 컬러로 만들고 싶어요."></textarea></label><button type="submit" class="btn btn--primary">상담 문의하기</button><p class="contact-form-note">피드백 시안용 폼입니다. 입력 내용은 전송되지 않습니다.</p><p class="contact-status" role="status" hidden>입력 내용을 확인했어요. 실제 상담 전송은 서비스 연결 후 제공됩니다.</p></form></div></section></div>
 </main>
 <footer class="footer--cta-sitemap"><div class="wrap"><div class="top"><div class="pitch"><p class="tag">머릿속에 있던 옷, 이제 첫 번째 샘플로.</p><a class="say" href="#contact"><span>Let’s make</span><b>your first piece.</b></a></div><nav class="map" aria-label="사이트맵"><div><h3>Design</h3><a href="#services">Silhouette</a><a href="#services">Details</a><a href="#services">Tech pack</a><a href="#services">Materials</a><a href="garment-studio.html">3D preview</a></div><div><h3>THREADFORM.</h3><a href="#story">Our process</a><a href="#services">Your toolkit</a><a href="#story">First steps</a><a href="#contact">Get in touch</a></div><div><h3>Production</h3><a href="#services">Specifications</a><a href="#contact">Sampling</a><a href="#contact">Budget planning</a><a href="#contact">Factory matching</a></div><div><h3>Explore</h3><a href="#faq">Getting started</a><a href="#services">Design ideas</a><a href="#faq">FAQ</a><a href="#contact">Contact</a></div></nav></div><div class="base"><div><p class="docs"><a href="#studio">About THREADFORM. </a><a href="#services">Toolkit</a><a href="#story">Process</a><a href="#services">Design ideas</a></p><p class="info"><span>서비스 <b>의류 디자인 · 제작 준비</b></span><span>브랜드 <b>THREADFORM.</b></span><span>안내 <b>홈페이지 피드백 시안</b></span></p><p class="fk-biz"><span>브랜드 THREADFORM.</span><span>의류 제작 서비스 시안</span><span>사업자 정보 준비 중</span><span>문의 정보 준비 중</span></p></div><div class="right"><p class="fk-pol"><a href="#top"><b>개인정보처리방침</b></a><a href="#top">이용약관</a><a href="#top">제작 안내</a></p><p>© 2026 THREADFORM. Clothing service concept.</p></div></div></div></footer>
-<div class="banner banner--pill" role="region" aria-label="안내"><p>생각해 둔 옷이 있나요? 첫 번째 디자인부터 시작하세요.</p><a class="btn btn--primary" href="garment-studio.html">Start your brand</a></div>
+<div class="banner banner--pill" role="region" aria-label="안내"><p><span class="banner-desktop">생각해 둔 옷이 있나요? 첫 번째 디자인부터 시작하세요.</span><span class="banner-mobile">첫 디자인, 시작해볼까요?</span></p><a class="btn btn--primary" href="garment-studio.html"><span class="banner-desktop">Start your brand</span><span class="banner-mobile">디자인 시작</span></a></div>
 
-<script src="page.js" defer></script>
+<script src="page.js?v=mobile-20261006" defer></script>
 </body></html>
